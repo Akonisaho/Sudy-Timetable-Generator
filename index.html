@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timetable Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Indie+Flower&family=Josefin+Slab:wght@100&family=Kalam:wght@300&family=Rubik+Doodle+Shadow&family=Sevillana&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><em>Study Timetable Generator</em></h1>
+        <div>
+            <label for="userName">Enter your name:</label>
+            <input type="text" id="userName" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="studyHours">Enter the number of hours you want to study:</label>
+            <input type="number" id="studyHours" placeholder="Enter hours">
+        </div>
+        <div>
+            <label for="studyMethod">Choose the study method:</label>
+            <select id="studyMethod">
+                <option value="">Select Study Method</option>
+                <option value="pomodoro">Pomodoro Technique</option>
+                <option value="traditional">Traditional Method</option>
+            </select>
+        </div>
+        <button onclick="generateStudyTimetable()">Generate Timetable</button>
+        <div id="timetable"></div>
+        <button id="downloadPDFButton" style="display:none;">Download Timetable</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
